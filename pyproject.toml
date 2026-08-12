@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alphaquant-system"
+version = "0.1.0"
+description = "事件驱动量化交易框架（QMT / Backtrader）"
+requires-python = ">=3.8,<3.11"
+
+[tool.setuptools]
+package-dir = { "alphaQuantSystem" = "." }
+packages = [
+    "alphaQuantSystem",
+    "alphaQuantSystem.analyze",
+    "alphaQuantSystem.backtest",
+    "alphaQuantSystem.core",
+    "alphaQuantSystem.data",
+    "alphaQuantSystem.engine",
+    "alphaQuantSystem.gateway",
+    "alphaQuantSystem.indicator",
+    "alphaQuantSystem.monitor",
+    "alphaQuantSystem.risk",
+    "alphaQuantSystem.services",
+    "alphaQuantSystem.services.position",
+    "alphaQuantSystem.services.account",
+    "alphaQuantSystem.services.risk",
+    "alphaQuantSystem.services.data",
+    "alphaQuantSystem.strategies",
+    "alphaQuantSystem.strategy",
+    "alphaQuantSystem.trader",
+    "alphaQuantSystem.utils",
+]
+
+# 静态分析：与运行时可编辑安装一致；未 pip install -e 时仍能从父目录解析 alphaQuantSystem.*
+[tool.pyright]
+extraPaths = [".."]
+pythonVersion = "3.10"

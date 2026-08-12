@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/quant/alphaQuant/**)",
+      "Bash(pip install:*)",
+      "Bash(python -c ':*)",
+      "Bash(pip show:*)",
+      "Bash(python -m pytest alphaQuantSystem/tests/test_framework.py -v)",
+      "Bash(python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(python -c \"import site; print\\(site.getsitepackages\\(\\)\\)\")",
+      "Bash(python -c \"import alphaQuantSystem; print\\('import OK'\\)\")",
+      "Bash(python -m pytest alphaQuantSystem/tests/test_framework.py -v --tb=short)",
+      "Bash(ls d:/quant/alphaQuant/*.egg-info)"
+    ]
+  }
+}
