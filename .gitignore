@@ -39,9 +39,6 @@ Thumbs.db
 .env.local
 .env.*
 
-# Examples (local only, not in repo)
-examples/
-
 # Quant data / cache (optional, large files)
 data/cache/
 *.db
