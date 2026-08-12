@@ -41,6 +41,8 @@ Thumbs.db
 
 # Examples (local only, not in repo)
 examples/
+需求文档.md
+quant_risk_control_module_development_skill.md
 
 # Quant data / cache (optional, large files)
 data/cache/
