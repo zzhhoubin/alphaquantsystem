@@ -7,10 +7,9 @@ from datetime import datetime
 from typing import Any, Dict, Optional
 from loguru import logger
 from alphaQuantSystem.core import EventEngine, Event, EventType, TickData, OrderData, TradeData, PositionData, AccountData, Direction, OrderType, OrderStatus
-QMT_PATH_SIMULATED = 'D:/国金QMT交易端模拟/userdata_mini'
-ACCOUNT_SIMULATED = '55012491'
-# QMT_PATH_REAL = 'D:/国金QMT交易端模拟/userdata_mini'
-# ACCOUNT_REAL = '8882405326'
+QMT_PATH_SIMULATED = 'your QMT_PATH'
+ACCOUNT_SIMULATED = 'your accoount'
+
 try:
     from xtquant.xttrader import XtQuantTrader, XtQuantTraderCallback
     from xtquant.xttype import StockAccount
